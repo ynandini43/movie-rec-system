@@ -9,7 +9,6 @@ venv/
 
 # Large data files
 *.csv
-*.pkl
 
 # IDE settings
 .idea/
