@@ -1,9 +1,9 @@
 services:
   - type: web
-    name: movie-recommender
+    name: movie-rec-system
     env: python
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "streamlit run app.py --server.address 0.0.0.0 --server.port $PORT --server.headless true"
-    envVars:
-      - key: OMDB_API_KEY
-        sync: false
+    buildCommand: |
+      pip install -r requirements.txt
+      git lfs install
+      git lfs pull
+    startCommand: streamlit run app.py
