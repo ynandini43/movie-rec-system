@@ -1,3 +1,16 @@
-venv
-*.pkl
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# Large data files
 *.csv
+*.pkl
+
+# IDE settings
+.idea/
+.vscode/
